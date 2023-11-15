@@ -8,6 +8,7 @@ public class LoginTests extends TestBase{
 
     @Test(groups = "smoke")
     public void positiveLogin() {
+        //do not change the login code
 
         LoginPage loginPage = new LoginPage();
         loginPage.validLogin1().click();
