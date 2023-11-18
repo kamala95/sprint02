@@ -11,7 +11,7 @@ import java.time.Duration;
 public class ClickAccount extends TestBase {
 
     @Test
-    public void ProfileAndAccount() {
+    public void ProfileAndAccount() { // bu test run qiladigan joy
 
       new LoginTests().positiveLogin();
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
