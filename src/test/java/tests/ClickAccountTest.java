@@ -1,22 +1,19 @@
 package tests;
 
 import org.testng.annotations.Test;
-import pages.Account;
 import pages.LoginPage;
-import pages.ProfilePage;
 import utils.Driver;
 
 import java.time.Duration;
 
-public class ClickAccount extends TestBase {
+public class ClickAccountTest extends TestBase {
 
-    @Test
-    public void ProfileAndAccount() {
-      new LoginTests().positiveLogin();
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    @Test (groups = "smoke")
+    public void ClickAccount() {//
         LoginPage loginPage = new LoginPage();
+        loginPage.validLogin1().click();
+        loginPage.validLogin();
         loginPage.validProfileIcon().click();
-
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         loginPage.getAccountPageBtn().click();
 
