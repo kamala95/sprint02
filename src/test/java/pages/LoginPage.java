@@ -36,4 +36,9 @@ public class LoginPage {
         public WebElement validProfileIcon(){
             return profileIcon;
     }
+
+        @FindBy(xpath = "(//button[@class='wC9sIed7pfp47wZbmU6m'])[1]")
+        private WebElement accountPageBtn;   // button to navigate to account page(profile icon -> dropdown -> account)
+
+        public WebElement getAccountPageBtn(){return accountPageBtn;}
 }
