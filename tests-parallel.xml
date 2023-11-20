@@ -3,7 +3,6 @@
 
 
     <test name="UI tests 1">
-
         <classes>
             <class name="tests.LoginTests"></class>
             <class name="tests.SearchTests"></class>

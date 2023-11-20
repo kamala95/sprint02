@@ -12,7 +12,5 @@ public class LoginTests extends TestBase{
         loginPage.validLogin1().click();
         loginPage.validLogin();
         Assert.assertTrue(loginPage.validProfileIcon().isDisplayed());
-
-
     }
 }
