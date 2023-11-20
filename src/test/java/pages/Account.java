@@ -6,6 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 @Data
 public class Account {
     public Account() {
@@ -101,6 +104,28 @@ public class Account {
 
     public WebElement getxBtnFb() {
         return xBtnFb;
+    }
+
+    @FindBy(xpath = "//a[@data-ga-action='about']")
+    private WebElement aboutPage;
+
+    public WebElement getAboutPage() {
+        return aboutPage;
+    }
+
+    @FindBy(xpath = "//section[@class='PageContent__Container-sc-1cswrfq-1 gtNpkI']")
+    private WebElement aboutPageContent;
+
+    public WebElement getAboutPageContent() {
+        return aboutPageContent;
+    }
+
+    public void savePageContentToFile(String filePath) {
+        try (FileWriter fileWriter = new FileWriter(filePath)) {
+            fileWriter.write(getAboutPageContent().getText());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FindBy(xpath = "//button[@class='mh-header-primary svelte-kdyqkb']")
