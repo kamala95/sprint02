@@ -55,10 +55,6 @@ public class SearchTests extends TestBase {
         assertTrue(searchPage.getRecentlyPlayed().getText().equals(ConfigReader.getProperty("artistname")));
     }
 
-
-
-
-
     @DataProvider
     public Object[][] dataFromCsv(){
         return SearchPage.readData("data.csv");
