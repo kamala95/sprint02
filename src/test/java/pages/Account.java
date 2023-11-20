@@ -113,6 +113,27 @@ public class Account {
         return aboutPage;
     }
 
+    @FindBy(xpath = "//a[@data-ga-action='help']")
+    private WebElement supportPage;
+
+    public WebElement getSupportPage() {
+        return supportPage;
+    }
+
+    @FindBy(xpath = "//input[@id='search-input']")
+    private WebElement searchField;
+
+    public WebElement getSearchField() {
+        return searchField;
+    }
+
+    @FindBy(xpath = "(//span[@data-encore-id='type'])[2]")
+    private WebElement searchResult;
+
+    public WebElement getSearchResult() {
+        return searchResult;
+    }
+
     @FindBy(xpath = "//section[@class='PageContent__Container-sc-1cswrfq-1 gtNpkI']")
     private WebElement aboutPageContent;
 
