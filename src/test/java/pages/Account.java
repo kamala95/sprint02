@@ -54,6 +54,55 @@ public class Account {
     @FindBy(xpath = "//a[@data-testid='menu-item-supportSite']")
     private WebElement supportSite;
 
+    @FindBy(xpath = "//a[@title='Instagram']")
+    private WebElement instagram;
+
+    public WebElement getInstagram() {
+        return instagram;
+    }
+
+    @FindBy(xpath = "//h1")
+    private WebElement igH1;
+
+    public WebElement getIgH1() {
+        return igH1;
+    }
+
+    @FindBy(xpath = "//a[@title='Twitter']")
+    private WebElement twitter;
+
+    public WebElement getTwitter() {
+        return twitter;
+    }
+
+    @FindBy(xpath = "(//span[@class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0'])[12]")
+    private WebElement twitterText;
+
+    public WebElement getTwitterText() {
+        return twitterText;
+    }
+
+    @FindBy(xpath = "//a[@title='Facebook']")
+    private WebElement facebook;
+
+    public WebElement getFacebook() {
+        return facebook;
+    }
+
+    @FindBy(xpath = "(//span[@class='x193iq5w xeuugli x13faqbe x1vvkbs xlh3980 xvmahel x1n0sxbx x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x4zkp8e x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u'])[2]")
+    private WebElement facebookText;
+
+    public WebElement getFacebookText() {
+        return facebookText;
+    }
+
+    @FindBy(xpath = "(//i[@class='x1b0d499 x1d69dk1'])[6]")
+    private WebElement xBtnFb;
+
+    public WebElement getxBtnFb() {
+        return xBtnFb;
+    }
+
     @FindBy(xpath = "//button[@class='mh-header-primary svelte-kdyqkb']")
     private WebElement profileBtn;
 
@@ -124,3 +173,5 @@ public class Account {
         return supportSite;
     }
 }
+
+

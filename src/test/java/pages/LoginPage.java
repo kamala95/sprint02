@@ -41,4 +41,5 @@ public class LoginPage {
         private WebElement accountPageBtn;   // button to navigate to account page(profile icon -> dropdown -> account)
 
         public WebElement getAccountPageBtn(){return accountPageBtn;}
+
 }
