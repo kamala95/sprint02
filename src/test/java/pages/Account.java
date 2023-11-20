@@ -78,7 +78,7 @@ public class Account {
         return twitter;
     }
 
-    @FindBy(xpath = "(//span[@class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0'])[12]")
+    @FindBy(xpath = "//div[@class='css-1rynq56 r-bcqeeo r-qvutc0 r-37j5jr r-a023e6 r-rjixqe r-16dba41' and @data-testid='UserDescription']/span")
     private WebElement twitterText;
 
     public WebElement getTwitterText() {
@@ -99,7 +99,7 @@ public class Account {
         return facebookText;
     }
 
-    @FindBy(xpath = "(//i[@class='x1b0d499 x1d69dk1'])[6]")
+    @FindBy(xpath = "//div[@aria-label='Close' and contains(@class, 'x1i10hfl')]/i[@data-visualcompletion='css-img']")
     private WebElement xBtnFb;
 
     public WebElement getxBtnFb() {

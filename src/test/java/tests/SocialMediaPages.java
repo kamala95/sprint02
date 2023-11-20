@@ -41,10 +41,11 @@ public class SocialMediaPages extends TestBase{
     }
 
     @Test(groups = "smoke")
-    public void navigateFacebook() throws InterruptedException {
+    public void navigateaFacebook() throws InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.validLogin1().click();
         loginPage.validLogin();
+        Thread.sleep(1000);
         loginPage.validProfileIcon().click();
         loginPage.getAccountPageBtn().click();
         SeleniumUtils.switchToWindow("Spotify");
