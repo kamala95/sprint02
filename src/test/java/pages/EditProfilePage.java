@@ -1,11 +1,11 @@
 package pages;
 
-import lombok.Data;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
-@Data
+
 public class EditProfilePage {
 
     public EditProfilePage(){
@@ -21,7 +21,5 @@ public class EditProfilePage {
 
     @FindBy(xpath = "(//button[@class=\"Button-sc-qlcn5g-0 dRlmYr\"])[2]")
     private WebElement saveButton;
-
-
 
 }
