@@ -12,17 +12,14 @@ import java.util.Set;
 
 public class SwitchToAccountWinTest extends TestBase {
 
-    @BeforeMethod
-   public void loginStep(){
-       LoginPage loginPage = new LoginPage();
-       loginPage.validLogin1().click();
-       loginPage.validLogin();
-       loginPage.validProfileIcon().click();
-       loginPage.getAccountPageBtn().click();
 
-   }
     @Test (groups = "smoke")
     public void switchToAccountWindow(){
+        LoginPage loginPage = new LoginPage();
+        loginPage.validLogin1().click();
+        loginPage.validLogin();
+        loginPage.validProfileIcon().click();
+        loginPage.getAccountPageBtn().click();
 
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         String parentHandle = Driver.getDriver().getWindowHandle();

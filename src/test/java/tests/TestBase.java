@@ -59,7 +59,7 @@ public class TestBase {
         logger.info("TEST STARTED: " + method.getName());
     }
 
-    @AfterMethod(alwaysRun = true)
+//    @AfterMethod(alwaysRun = true)
     public void cleanUp(ITestResult testResult){
 
         if(testResult.getStatus() == ITestResult.SUCCESS){
