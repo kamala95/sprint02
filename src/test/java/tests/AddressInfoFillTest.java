@@ -14,7 +14,7 @@ public class AddressInfoFillTest extends TestBase {
 
     Faker faker = new Faker();
 
-    @Test (groups = "regression")
+    @Test (groups = "smoke")
     public void addressFillOut() throws InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.validLogin1().click();

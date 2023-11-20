@@ -12,9 +12,6 @@ import org.openqa.selenium.safari.SafariDriver;
     public class Driver {
 
 
-
-
-        // For this design pattern to work properly, you will need to call Driver.getDriver() everytime you need a WebDriver
         private static ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
 
 
@@ -23,13 +20,13 @@ import org.openqa.selenium.safari.SafariDriver;
 
         public static synchronized WebDriver getDriver(){
 
-            if(drivers.get() == null){   // if it is not initialized, initialize it
+            if(drivers.get() == null){
 
-                String browser = System.getProperty("browser"); // read the browser value from command line
+                String browser = System.getProperty("browser");
 
 
-                if(browser == null){ // if nothing was passed through cmd
-                    browser = ConfigReader.getProperty("browser").toLowerCase(); //read the browser type from the config file
+                if(browser == null){
+                    browser = ConfigReader.getProperty("browser").toLowerCase();
                 }
 
 
@@ -64,7 +61,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
             }
 
-            return drivers.get();  // return the already initailized driver
+            return drivers.get();
         }
 
         public static synchronized void quitDriver(){

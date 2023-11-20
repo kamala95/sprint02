@@ -7,6 +7,14 @@
         <classes>
             <class name="tests.LoginTests"></class>
             <class name="tests.SearchTests"></class>
+            <class name="tests.AddressInfoFillTest"></class>
+            <class name="tests.ClickAccountTest"></class>
+            <class name="tests.ClickAddressTest"></class>
+            <class name="tests.EditProfileTest"></class>
+            <class name="tests.ManageYourPlanTest"></class>
+            <class name="tests.NotificationSettingsTests"></class>
+            <class name="tests.SearchTests"></class>
+            <class name="tests.SwitchToAccountWinTest"></class>
         </classes>
 
     </test>

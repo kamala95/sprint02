@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class ClickAddressTest extends TestBase {
 
-    @Test (groups = "regression")
+    @Test (groups = "smoke")
     public void openAddressWindow(){
         LoginPage loginPage = new LoginPage();
         loginPage.validLogin1().click();
